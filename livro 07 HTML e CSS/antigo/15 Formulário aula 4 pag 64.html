@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- FORM
+    tudo dentro dessa tag é parte de um formulário, e dentro dela temos vário elementos
+
+    input: entrada de dados
+    
+    textarea: caixa de texto com múltiplas linhas
+
+    Label: define um rótulo
+
+    fieldset: agrupa elementos
+
+    legend: define a legenda
+
+    select: lista de drop-down
+
+    optgroup: opções de grupo para o select
+
+    option: elemento da lista
+
+    button: um botão
+
+    datalist: especifica uma lista de opções pré-definidas para um elemento
+
+    -->
+
+    <!-- Datalist -->
+    <label for="navegadores"> Qual é o seu navegador favorito?</label><!-- Rótulo-->
+    <input list="navegadores"><!-- Entrada de dados-->
+    <datalist id="navegadores"><!-- inicio a lista-->
+        <option>Chrome</option>
+        <option>Opera</option>
+        <option>Safari</option>
+        <option>Internet Explores</option>
+        <option>Firefox</option>
+    </datalist>
+
+    <fieldset><!-- cria uma caixa em volta, agrupa-->
+        <legend>UF</legend><!-- Define a legenda -->
+        <label for="Estado de nascimento">Defina o estado que você nasceu</label><!-- Rótulo-->
+        <input name="UF_Nascimento" list="Estados" type="text" id="estados_brasileiros"><!-- entrada de dados-->
+        <datalist id="Estados"><!-- inicio da lista-->
+            <option value="AC"> Acre </option>
+            <option value="AL"> Alagoas </option>
+            <option value="SP"> São Paulo </option>
+            <option value="RJ"> Rio de Janeiro </option>
+            <option value="RS"> Rio grande do Sul </option>
+        </datalist> 
+    </fieldset>
+
+    <!-- Input -->
+
+    <form>
+        aluno:<br>
+        <input type="text" name="aluno">
+        <br>
+        RA:<br>
+        <input type="text" name="Raaluno">
+    </form>
+
+    <!-- Caixa de texto para senha-->
+
+    <form>
+        aluno:<br>
+        <input type="text" name="aluno">
+        <br>
+        Senha:<br>
+        <input type="password" name="Raaluno" size="20">
+    </form>
+
+    <!-- Botão de rádio-->
+    <form>
+        <!-- O segredo de não selecionar todos é dar o mesmo nome a todos-->
+        <input type="radio" name="E">Solteiro (a)<br>
+        <input type="radio" name="E">Casado (a)<br>
+        <input type="radio" name="E">Divorciado (a)<br>
+        <input type="radio" name="E">Viúvo (a)<br>
+    </form>
+
+    <!-- Caixa de checagem--><br>
+
+    <form>
+        <!-- O segredo de não selecionar todos é dar o mesmo nome a todos-->
+        <input type="checkbox" name="aa">PHP<br>
+        <input type="checkbox" name="aa">Angular<br>
+        <input type="checkbox" name="aa">Javascript<br>
+        <input type="checkbox" name="aa">C++<br>
+    </form>
+
+    <!-- Caixa de seleção--><br>
+    Selecione um módulo:
+    <select>
+        <option>Photoshop</option>
+        <option>Illustrator</option>
+        <option>HTML 5</option>
+    </select>
+
+    <!-- Caixa de seleção com múltipla escolha--><br><br>
+
+    Selecione um módulo:
+    <select multiple="multiple">
+        <option>Photoshop</option>
+        <option>Illustrator</option>
+        <option>HTML 5</option>
+        <option>CSS3</option>
+        <option>Premiere</option>
+        <option>Pacote office</option>
+    </select>
+
+
+</body> 
+</html>

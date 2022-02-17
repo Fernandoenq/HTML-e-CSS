@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08 tabelas</title>
+
+</head>
+<body>
+
+
+    <table width="500" Border="1"><!-- tabela com 60% de largura de espaço nas palavras ate a borda e 1px de borda-->
+        <thead><!-- Define o começo de fim do cabeçalho de uma tabela-->
+            <tr><!-- Cria uma linha na tabela-->
+                <th>Matricula</th> <!--Cria uma célula porem serve mais para cabeçalhos-->
+                <th>Aluno</th>
+                <th>Email</th>
+            </tr>
+        </thead> 
+        <tbody><!-- Define o começo de fim do corpo de uma tabela-->
+            <tr><!-- Cria uma linha na tabela-->
+                <td Align="right">CT0101</td> <!-- Cria uma célula podendo ter left, center, right ou justify-->
+                <td>André Soleiro Almeida</td>
+                <td>solteiro.al@servidor.com.br</td>
+            </tr>
+        </tbody>
+        <tfoot><!-- Define o começo de fim do rodapé de uma tabela-->
+            <tr><!-- Cria uma linha na tabela-->
+                <td>CT0202</td> <!-- Cria uma célula-->
+                <td>José da silva</td>
+                <td>silva@servidor.com.br</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Esse não é um bom exemplo de rodapé, na vdd este ultimo elemento 
+    é parte do body-->
+
+    <!-- Usar o thead tbody e tfoot ajuda os navegadores a interpretarem sua 
+    tabela da forma correta, alem de que esses elementos podem permitir 
+    que o cabeçalho e o rodapé da tabela 
+    sejam impressos na parte superior e inferior de cada página
+    O Css pode usar tais elementos tambem-->
+
+    <table>
+        <thead>
+          <tr>
+            <th>Mês</th>
+            <th>Dividas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Janeiro</td>
+            <td>R$ 100</td>
+          </tr>
+          <tr>
+            <td>Fevereiro</td>
+            <td>R$ 300</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>total</td>
+            <td>R$ 400</td>
+          </tr>
+        </tfoot>
+      </table>
+
+
+</body>
+</html>

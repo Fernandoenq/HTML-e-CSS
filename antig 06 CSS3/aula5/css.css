@@ -1,0 +1,272 @@
+#transiç1{
+    display: block;
+    background-color: blue;
+    width: 25%;
+    height: 50px;
+    border: solid 5px darkblue;
+    color: white;
+    text-align: center;
+    transition-property: width, height; /* a animação será aplicada na largura e altura*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#transiç1:hover{
+    width: 50%;
+    height: 100px;
+    background-color: darkblue;
+    border: solid 5px blue;
+    font-size: 2.5em;
+    text-align: center;
+
+
+}
+
+
+#transiç2{
+    display: block;
+    background-color: blue;
+    width: 25%;
+    height: 50px;
+    border: solid 5px darkblue;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition-property: width, height, font-size;/*A transição será aplicada na largura, altura e tamanhos da fonte
+    Mesmo que voce n coloque fonte size aqui mas em hover vc altera o tamanho a transição nao rola, o tamanho muda mas n tem a animação*/
+    transition-duration: 5s; /*A animação levará 5 segundos*/
+}
+
+#transiç2:hover{
+    width: 50%;
+    height: 100px;
+    background-color: darkblue;
+    border: solid 5px blue;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#transiç3{
+    display: block;
+    background-color: blue;
+    width: 25%;
+    height: 50px;
+    border: solid 5px darkblue;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition-property: width, height, font-size;/*A transição será aplicada na largura, altura e tamanhos da fonte*/
+    transition-duration: 5s; /*A animação levará 5 segundos*/
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s; /*Tempo para iniciar a transição*/
+
+}
+
+#transiç3:hover{
+    width: 50%;
+    height: 100px;
+    background-color: darkblue;
+    border: solid 5px blue;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+#transiç4{
+    display: block;
+    background-color: blue;
+    width: 25%;
+    height: 50px;
+    border: solid 5px darkblue;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition-property: width, height, font-size;/*A transição será aplicada na largura, altura e tamanhos da fonte*/
+    transition-duration: 5s; /*A animação levará 5 segundos*/
+    transition-timing-function: ease-in-out;
+
+}
+
+#transiç4:hover{
+    width: 50%;
+    height: 100px;
+    background-color: darkblue;
+    border: solid 5px blue;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+#transiç5{
+    display: block;
+    background-color: blue;
+    width: 25%;
+    height: 50px;
+    border: solid 5px darkblue;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition-property: width, height, font-size;/*A transição será aplicada na largura, altura e tamanhos da fonte*/
+    transition-duration: 5s; /*A animação levará 5 segundos*/
+    transition-timing-function: steps(4,end);
+
+}
+
+#transiç5:hover{
+    width: 50%;
+    height: 100px;
+    background-color: darkblue;
+    border: solid 5px blue;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#transiç6{
+    display: block;
+    background-color: blue;
+    width: 25%;
+    height: 50px;
+    border: solid 5px darkblue;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition-property: width, height, font-size;/*A transição será aplicada na largura, altura e tamanhos da fonte*/
+    transition-duration: 5s; /*A animação levará 5 segundos*/
+    transition-timing-function: cubic-bezier(0,1,1,0);
+
+}
+
+#transiç6:hover{
+    width: 50%;
+    height: 100px;
+    background-color: darkblue;
+    border: solid 5px blue;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+/*-------------------------------------------------------------------------------*/
+
+#anim1{
+    width: 100px;
+    height: 100px;
+    left: 1%;
+    margin-bottom: 10px;
+    background-color: red;
+    position: relative;
+    animation-name: anima1;
+    animation-duration: 5s;
+}
+
+@keyframes anima1{
+    from{
+        left: 1%;
+        opacity: 1;
+        top: 10px;
+        margin-bottom: 10px;
+    }
+    to{
+        opacity: 0;
+        left: 80%;
+        margin-bottom: 10px;
+        transform: rotate(180deg);
+        background-color: yellow;
+    }
+}
+
+#anim2{
+    width: 100px;
+    height: 100px;
+    left: 1%;
+    margin-bottom: 10px;
+    background-color: red;
+    position: relative;
+
+}
+
+#anim2:hover{
+    animation-name: anima2;
+    animation-duration: 10s;
+}
+
+@keyframes anima2{
+    from{
+        left: 1%;
+        opacity: 1;
+        margin-bottom: 10px;
+    }
+    to{ 
+        opacity: 0;
+        left: 80%;
+        margin-bottom: 10px;
+        transform: rotate(180deg);
+        background-color: yellow;
+    }
+}
+
+#area{
+    width: 450px;
+    height: 400px;
+    border: black dashed 3px;
+}
+
+#anim3{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: red;
+    left: 1%;
+    position: relative;
+    
+}
+#anim3:hover{
+    animation-name: anima3;
+    animation-duration: 10s;
+}
+
+@keyframes anima3{
+    0%{
+        left: 0%;
+        top: 0%;
+    }
+    25%{
+        left: 75%;
+        top: 0%;
+        background-color:blue;
+
+    }
+
+    50%{
+
+        left: 75%;
+        top: 75%;
+       
+        background-color: yellow;*/
+    }
+
+    75%{
+
+        top: 75%;
+        left: 0%;
+        background-color: green;*/
+    }
+
+    100%{
+        top: 0%;
+        left: 0%;
+        background-color: black;*/
+    }
+}
+
+@media (max-width: 800px)  {
+    body{
+        background-color: violet;
+    }
+    
+}

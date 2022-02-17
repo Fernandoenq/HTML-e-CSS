@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de input</title>
+</head>
+<body>
+    <!-- Temos vários tipos de input
+    
+        button: botão
+
+        checkbox: caixa de seleção
+
+        radio: botão de radio
+
+        reset: limpa todos os campos do formulário
+
+        file: permite o usuário subir um arquivo
+
+        color: escolher uma cor
+
+        date: recebe valores em datas
+        
+        dateTime-Local: seleciona hora e data
+
+        email: permite apenas email
+
+        number: permite apenas numeros
+
+        month: selecionar mês e ano
+
+        range: entrada através de uma barra
+
+        search: campo de busca
+
+        time: selecionar horas
+
+        url: entrada de links
+
+        week: semana e ano
+
+    -->
+<form>
+    Email:
+    <input type="email">
+    <input type="submit" value="Enviar"><br>
+
+    <br>URL:
+    <input type="url">
+    <input type="submit" value="Enviar"><br>
+
+    <br>Range (barra):
+    <input type="range" min="0" max="100">
+    <input type="submit" value="Enviar"><br>
+
+    <br>Color:
+    <input type="color">
+    <input type="submit" value="Enviar"><br>
+
+    <br>Date:
+    <input type="date">
+    <input type="submit" value="Enviar"><br>
+
+    <br>DateTime-Local:
+    <input type="datetime-local">
+    <input type="submit" value="Enviar"><br>
+
+    <br>Mês:
+    <input type="month">
+    <input type="submit" value="Enviar"><br>
+
+    <br>Week:
+    <input type="week">
+    <input type="submit" value="Enviar"><br>
+
+    <br>arquivo:
+    <input type="file">
+    <input type="submit" value="Enviar"><br>
+
+    <!-- Place holder
+    indica dentro do input o tipo de info que ele deseja
+    -->
+
+    <br>Placeholder:
+    <input type="text" placeholder="NOME">
+    <input type="submit" value="Enviar"><br>
+
+    <!-- Progress
+    uma barra controlável por java
+    -->
+    <br>Progress:<br>
+    <progress value="90" max="100"></progress><br>
+    <progress value="40" max="100"></progress>
+
+    <!-- Meter
+    Barra que mede dados dentre um determinado intervalo
+    -->
+    <br>Meter:
+    <meter value="9" min="0" max="10">Capacidade do disco</meter>
+
+    <!-- Required
+    se o campo n for preenchido o usuário é avisado
+    -->
+    <br>Required:
+    <input type="text" required>
+    <input type="submit" value="Enviar"><br>
+    
+    <!-- Formaction
+    Permite colocar um link no botão
+    -->
+    <br>Formaction:
+    <input type="submit" value="Criar uma conta" formaction="https://www.youtube.com/"><br>
+
+</form>
+
+</body>
+</html>

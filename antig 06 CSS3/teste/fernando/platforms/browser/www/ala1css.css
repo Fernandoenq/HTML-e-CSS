@@ -1,0 +1,117 @@
+/*              CSS             */
+
+ul{ /* vamos configurar a lista*/
+    list-style-type: none; /* Remove os pontinhos*/
+    margin: 0; /* margem zero entre a lista e o topo da página*/
+    padding: 0;/* zera a distância entre o canto e a lista*/
+    font-family: "Consolas", "Lucida console", "Lucida Sans Typewriter";/* fontes */
+    font-size: 1em;
+}
+
+li{/*aconfigurando os elementos da lista*/
+    float: left; /* bota geral encostando na esquerda*/
+    /*width: 100%;*/
+}
+
+/*
+a:link = um link comum, não visitado
+a:visited = um link que ja foi visitado
+a:hover = um link no momento em que o usuário passa o   mouse sobre
+a:active = um link no momento em que o usuário está clicando sobre 
+*/
+a:link, a:visited{/*configurando os links quando foi ou não visitado*/
+    display: block;/*meio que cria uma bora no elemento, tornando um bloco*/
+    font-weight: bold; /*negrito*/
+    color: #fff;/*deixa as letras brancas*/
+    background-color: red;/*fundo vermelho*/
+    text-align: center;/*alinha o texto ao centro*/
+    padding: 10px 20px; /*cria um espaço interno amais, 10 de altura e 20 de largura*/
+    text-decoration: none; /* sem alguns detalhes como underline (sublinhado)*/
+    text-transform: uppercase;/*Transforma tudo em maiúsculas*/
+}
+
+a:hover, a:active{/*configura os inks quando passa o maouse por cima ou ao clicar*/
+    background-color: #fc0;/* fundo amarelo*/
+    color: #666;/*cor da letra cinza*/
+}
+
+
+#tit{ /* titulo de nivel 1*/
+    color: black;
+    background-color: #F57887;
+    text-align: center;
+    font-family: verdana;
+    font-weight: 900;
+    margin: 0;
+}
+
+.lorem{
+    background-color: chartreuse;
+    color: blue;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    font-size: 15px;
+
+}
+
+#conjunto{
+    
+    border-style: solid;
+    align-items: center;
+    width: 800px; /*largura*/
+    height: 200px; /*altura*/
+    align-items: center;
+    margin: 0;
+    
+
+}
+
+h3{
+    font-size: 1.2em;
+    color: blue;
+    text-align: center;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+p{
+    width: 60%;
+    border-bottom:red;
+    font-family: verdana;
+    font-size: large;
+    text-align: justify;
+}
+/*
+first letter: deve ser utilizado para aplicar formatação na primeira letra de uma linha
+
+First line: deve ser utilizado para aplicar uma formatação na primeira linha
+
+after: deve ser usado para gerar conteudo depois do elemento
+
+before: deve ser usado para gerar conteudo antes do elemento
+
+
+*/
+#divona > p:first-letter{/*Primeira letra*/
+    font-size: 1.8em; /*tamanho*/
+    color: red;/* cor vermelha*/
+    font-weight: bold;/*força da fonte*/
+    padding-right: 10%;/*meio que um espaçamento*/
+    padding-left: 10%;
+}
+#divona > p:first-line{/*primeira linha*/
+    font-weight: bold;/*fonte em negrito*/
+    color: #999;
+}
+#divona > p:after{/*conteudo depois do texto*/
+    content: "Nossa dificil mesmo entender isso tudo";/*texto que aparecerá depois*/
+    color: red;
+    font-size: 0.8em;/*tamanho da fonte*/
+    font-style: italic;/*coloca em italico*/
+    font-family: Times, serif;
+
+}
+
+
+

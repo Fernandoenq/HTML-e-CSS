@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  style ="background:#aaa ;">
+    <!-- Details   Detalhes de um documento que ficam ocultos ate o usuário clicar-->
+    <!-- Usado junto com Details e serve de titulo-->
+
+    <details>
+        <summary> Sobre a entrevista</summary>
+        <p>Lorem ipsum dolor sit amet, consectetuer 
+            dipiscing elit. Maecenas porttitor congue massa. 
+            Fusce posuere, magna sed pulvinar ultricies, purus 
+            lectus malesuada libero, sit amet commodo magna eros
+            quis urna. Nunc viverra imperdiet enim.</p>
+    </details>
+
+    <!-- Estrutura de menu em forma de barra o objetivo é seruma barra de ferramentas-->
+    <menu type="toolbar" label="arquivo">
+        <!-- type toolbar pq o nosso menu é do tipo ferramentas-->
+        <!-- label é o nome ou rótulo do menu mais usados em menus dentro de menus-->
+        <button onclik="novo()">Novo</button>
+        <button onclik="abrir()">abrir</button>
+        <button onclik="salvar()">Salvar</button>
+        <button onclik="salvarcomo()">Salvar como</button>
+        <!-- button é um botão-->
+        <!-- onclick você criou uma função ao clicar-->
+    </menu>
+
+        <!-- Entender o erro d command-->
+    <menu type="toolbar" label="arquivo">
+        <command| onclik="novo()"/>Novo 
+        <command| onclik="abrir()">abrir</command>
+        <command| onclik="salvar()">Salvar</command>
+        <command| onclik="salvarcomo()">Salvar como</command>
+        
+    </menu>
+
+</body>
+</html>

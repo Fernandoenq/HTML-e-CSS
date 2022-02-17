@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Document</title>
+    <style>
+        @font-face{
+            font-family:'nete';
+            src: url(MelodySouthern-Script.otf);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background-color: blueviolet; text-align: center;">Bordas pag 99</h1>
+
+    <!--
+
+        Border-radius
+        Box-shadow
+        Border-image
+
+    -->
+
+    <!-- Border Radius
+    
+        DIR-SUPpx 
+        ESQ-SUPpx
+        ESQ-INFpx
+        DIR-INFpx 
+    
+    -->
+
+    <p style="background-color: teal; text-align: center;">Curvatura das pontas pag 100</p>
+    
+    <div style="width: 60%; height: 100px; background-color: blueviolet;text-align: center; border: solid 6px black; border-radius: 0px 30px 0px 30px;">
+        <h1 style="color: white;">Border-Radius</h1>
+    </div>
+
+   
+
+    <!-- Box shadow
+    
+        box-shadow X Y borrão espalha cor
+    -->
+
+    <p style="background-color: teal; text-align: center;">Sombreamento das bordas pag 101</p>
+
+    <div style="width: 500px; height: 250px; background-color: rgb(0,250,0); text-align: center; box-shadow: 5px 10px 10px black;">
+        <h1>BOX-Shadow</h1>
+    </div><br>
+
+    <h1 style="background-color: blueviolet; text-align: center;">configurações de background</h1>
+    <!--background image
+    
+        Se for usar defina uma borda antes
+        border: 20px solid transparent;
+    
+    border-image = forma simplificada
+
+    border-image-source = pega a imagem
+        src()
+
+    border-image-slice = corta a imagem da borda
+
+    border-image-width = a largura da imagem da borda
+
+    border-image-outset = a quantidade pela qual a área da imagem da borda se estende álem da caixa da borda
+
+    border-image-repeat = se a imagem da borda deve ser repetida.
+        stretch = padrão 
+        round = responsivo
+        repeat = repete a imagem em toda a borda
+    -->
+
+    <p style="background-color: teal; text-align: center;">Propriedades de imagens de borda pag 103</p>
+
+    <!-- Forma simplificada-->
+    <div style="border: 10px solid transparent;
+    border-image: url(imagemparaborda.png) 50 round;">
+        <p>Simplificada</p>
+    </div>
+
+
+    <div style="
+    border: 10px solid transparent;
+    border-image-source: url(imagemparaborda.png);
+    border-image-slice: 50; 
+    border-image-width: 10px;
+    border-image-outset: 0px;
+    background-repeat: round;">
+        <p>ampliada</p>
+    </div>
+
+    <!-- Background 
+    
+    Background-size = tamanho da imagem de fundo
+
+    Background-origin = área e posicionamento da imagem de fundo
+        padding-box = a imagem é posicionada na margem, preenchendo o lugar do padding.
+        border-box = a imagem é posicionada na margem, sobre a borda
+        content-box = a imagem é posicionada sobre o espaço do conteúdo da caixa
+    
+    -->
+
+    <!-- size -->
+    <p style="background-color: teal; text-align: center;">Propriedades de background pag 105</p>
+
+    <div style="
+        width: 40%;
+        height: 300px;
+        border: 1px solid black;
+        background-image: url(imagemparaborda.png);
+        background-size: 30% 100%;
+        background-repeat: no-repeat;
+    ">
+        <h2 style="padding-left: 35%; padding-top: 10%; margin: -15px 2px 20px 4px;">CSS Background-Size</h2>
+        <p style="padding-left: 35%; font-size: 1.1em;">
+            background-image<br>
+            background-position<br>
+            background-size<br>
+            background-repeat<br>
+            background-origin<br>
+            background-clip<br>
+            background-attachment<br>
+        </p>
+
+    </div>
+
+    <!-- Origin -->
+
+    <div style="
+        width: 350px;
+        height: 300px;
+        padding: 1%;
+        border: 10px dashed black;
+        background-image: url(imagemparaborda.png);
+        background-origin: padding-box;
+        background-repeat: no-repeat;
+    ">
+        <h1> CSS3 Background-origin padding-box</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at mattis orci. Sed non odio pharetra magna hendrerit lobortis eget et quam. Mauris scelerisque sapien non nisi gravida congue.
+        </p>
+    </div>
+
+    <div style="
+        width: 350px;
+        height: 300px;
+        padding: 1%;
+        border: 10px dashed black;
+        background-image: url(imagemparaborda.png);
+        background-origin: border-box;
+        background-repeat: no-repeat;
+    ">
+        <h1> CSS3 Background-origin border-box</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at mattis orci. Sed non odio pharetra magna hendrerit lobortis eget et quam. Mauris scelerisque sapien non nisi gravida congue.
+        </p>
+    </div>
+
+    <div style="
+        width: 350px;
+        height: 300px;
+        padding: 1%;
+        border: 10px dashed black;
+        background-image: url(imagemparaborda.png);
+        background-origin: content-box;
+        background-repeat: no-repeat;
+    ">
+        <h1> CSS3 Background-origin content-box</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at mattis orci. Sed non odio pharetra magna hendrerit lobortis eget et quam. Mauris scelerisque sapien non nisi gravida congue.
+        </p>
+    </div>
+
+    <h1 style="background-color: blueviolet; text-align: center;">Gradiente pag 109</h1>
+
+    <!-- Gradiente
+
+    Gradiente linear
+
+    Gradiente radial
+
+    -->
+
+    <p style="background-color: teal; text-align: center;">Linear pag 109</p>
+
+    <div style="
+    width: 25%;
+    height: 250px;
+    background: linear-gradient(red, yellow);
+    ">
+      <p style="text-align: center; font-size: 1.5em;">De cima para baixo</p>  
+    </div>
+
+    <div style="
+    width: 25%;
+    height: 250px;
+    background: linear-gradient(to top,red, yellow);
+    ">
+      <p style="text-align: center; font-size: 1.5em;">De baixo para cima</p>  
+    </div>
+
+
+    <div style="
+    width: 25%;
+    height: 250px;
+    background: linear-gradient(to left,red, yellow);
+    ">
+      <p style="text-align: center; font-size: 1.5em;">Da direita para a esquerda</p>  
+    </div>
+
+    <div style="
+    width: 25%;
+    height: 250px;
+    background: linear-gradient(to right,red, yellow);
+    ">
+      <p style="text-align: center; font-size: 1.5em;">Da esquerda para a direita</p>  
+    </div>
+
+    
+    <p style="background-color: teal; text-align: center;">Radial pag 112</p>
+
+    <div style="
+    width: 25%;
+    height: 250px;
+    background: radial-gradient(red, yellow);
+    ">
+        <p style="text-align: center; font-size: 1.5em;">Radial</p>
+    </div>
+
+    <div style="
+    width: 25%;
+    height: 250px;
+    background: radial-gradient(red, yellow, green);
+    ">
+        <p style="text-align: center; font-size: 1.5em;">Radial</p>
+    </div>
+
+    <div style="
+    width: 25%;
+    height: 250px;
+    background: radial-gradient(circle ,red, yellow, green);
+    ">
+        <p style="text-align: center; font-size: 1.5em;">Radial</p>
+    </div>
+    <h1 style="background-color: blueviolet; text-align: center;">@font</h1>
+
+    <!-- @font 
+        
+    Garantir que a fonte esolhida seja usada no site através de um arquivo externo
+
+
+    
+    -->
+
+    <h1 style="font-family: nete;">Fonte melody</h1>
+
+    <h1 style="background-color: blueviolet; text-align: center;">Columns</h1>
+
+    <!--columns
+    
+    quebrar o texto em colunas
+
+    webkit chrome, opera, safari
+    moz firefox
+    apneas o resto to explorer 11
+
+    column-count = quantidade de colunas
+
+    column-width = largura das colunas
+
+    column-gap = espaço entre as colunas
+
+    column-rule = configurações do espaço entre colunas
+    -->
+
+    <div style="
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    font-size: 1.2em;
+    width: 70%;
+    height: 250px;
+    text-align: left;
+    border: blueviolet 3px solid;
+    margin-bottom: 10px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue congue fringilla. Duis ac magna dictum magna volutpat vulputate. Sed euismod tristique diam.Vestibulum luctus ac leo id malesuada. Donec vel sem eget eros placerat maximus et nec enim. Duis hendrerit ante elit, sed imperdiet nisi vulputate ut. Etiam non lectus a leo convallis aliquet. Cras tincidunt orci eget cursus malesuada. Vivamus quis congue urna, ac ullamcorper arcu. Donec ornare, ligula in mollis feugiat, felis ipsum auctor velit, vel fringilla neque risus vel magna. Sed posuere nunc ac tortor consequat bibendum. Vivamus in imperdiet augue, sed ultrices libero. In congue enim in posuere
+    </div>
+    
+    <div style="
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    
+    column-width: 25px;
+    -webkit-column-width: 25px;
+    -moz-column-width: 25px;
+
+    column-gap: 100px;
+    -webkit-column-gap: 100px;
+    -moz-column-gap: 100px;
+    
+    width: 70%;
+    height: 250px;
+    text-align: left;
+    border: blueviolet 3px solid;
+    margin-bottom: 10px;
+    ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue congue fringilla. Duis ac magna dictum magna volutpat vulputate. Sed euismod tristique diam.Vestibulum luctus ac leo id malesuada. Donec vel sem eget eros placerat maximus et nec enim. Duis hendrerit ante elit, sed imperdiet nisi vulputate ut. Etiam non lectus a leo convallis aliquet. Cras tincidunt orci eget cursus malesuada. Vivamus quis congue urna, ac ullamcorper arcu. Donec ornare, ligula in mollis feugiat, felis ipsum auctor velit, vel fringilla neque risus vel magna. Sed posuere nunc ac tortor consequat bibendum. Vivamus in imperdiet augue, sed ultrices libero. In congue enim in posuere
+    </div>
+
+    <div style="
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    
+    column-width: 25px;
+    -webkit-column-width: 25px;
+    -moz-column-width: 25px;
+
+    column-gap: 100px;
+    -webkit-column-gap: 100px;
+    -moz-column-gap: 100px;
+
+    column-rule: 10px dashed green;    
+    -webkit-column-rule: 10px dashed green;
+    -moz-column-rule: 10px dashed green;
+    
+    width: 70%;
+    height: 250px;
+    text-align: left;
+    border: blueviolet 3px solid;
+    margin-bottom: 10px;
+    ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue congue fringilla. Duis ac magna dictum magna volutpat vulputate. Sed euismod tristique diam.Vestibulum luctus ac leo id malesuada. Donec vel sem eget eros placerat maximus et nec enim. Duis hendrerit ante elit, sed imperdiet nisi vulputate ut. Etiam non lectus a leo convallis aliquet. Cras tincidunt orci eget cursus malesuada. Vivamus quis congue urna, ac ullamcorper arcu. Donec ornare, ligula in mollis feugiat, felis ipsum auctor velit, vel fringilla neque risus vel magna. Sed posuere nunc ac tortor consequat bibendum. Vivamus in imperdiet augue, sed ultrices libero. In congue enim in posuere
+    </div>
+
+    <h1 style="background-color: blueviolet; text-align: center;">Transformações</h1>
+
+    <p style="background-color: green; text-align: center;"> Transform 2d </p>
+
+    <!-- Transform 2d
+    
+    translat() = Utilizado para mover o elemento no eixo x e y
+
+    rotate() = utilizado para rotacionar o elemento levando em consideração seu ângulo, especialmente quando o ângulo está definido com transform-origin
+
+    scale() = Utilizado para modificar a dimensão do elemento
+
+    skew() = Utilizado para modificar o ângulos dos elementos
+
+    Matrix() = Utilizado para combinar todos os valores anteriores em uma só declaração
+    -->
+
+    <ul id="imagenss">
+        <li><img src="all might.jpg"></li>
+        <li><img src="deku.png"></li>
+        <li><img src="goku.jpeg"></li>
+        <li><img src="steve.jpg"></li>
+    </ul>
+    <ul id="imagenss2">
+        <li><img src="all might.jpg"></li>
+        <li><img src="deku.png"></li>
+        <li><img src="goku.jpeg"></li>
+        <li><img src="steve.jpg"></li>
+    </ul>
+    <ul id="imagenss3">
+        <li><img src="all might.jpg"></li>
+        <li><img src="deku.png"></li>
+        <li><img src="goku.jpeg"></li>
+        <li><img src="steve.jpg"></li>
+    </ul>
+    <ul id="imagenss4">
+        <li><img src="all might.jpg"></li>
+        <li><img src="deku.png"></li>
+        <li><img src="goku.jpeg"></li>
+        <li><img src="steve.jpg"></li>
+    </ul>
+
+    <p style="background-color: green; text-align: center;"> Transform 3d </p>
+
+    <div class="box1">
+        <div class="box2"> Perspectiva </div>
+    </div>
+    
+    <p style="background-color: green; text-align: center;"> Rotate 3d </p>
+
+    <ul id="ul1">
+        <li><img src="all might.jpg"></li>
+        <li><img src="deku.png"></li>
+        <li><img src="goku.jpeg"></li>
+        <li><img src="steve.jpg"></li>
+    </ul>
+
+    <p style="background-color: green; text-align: center;"> Scale 3d </p>
+
+    <div class="box3">
+        <div class="box4"> Perspectiva </div>
+    </div>
+<!--
+    <section id="sec">
+        <div id="divsec">Translate 3d</div>
+    </section>
+
+    
+
+
+-->
+</body>
+</html>

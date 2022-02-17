@@ -1,0 +1,8 @@
+<html>
+<head>
+<title> Título do documento </title>
+</head>
+<body>
+Curso de informática
+</body>
+</html>

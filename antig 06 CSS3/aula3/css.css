@@ -1,0 +1,251 @@
+/*box 1*/
+
+#firstbox{
+    margin-top: 50px;
+    margin-right: 500px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+
+    border: 50px solid #dfdfdf;
+
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+}
+/*box 2 Formulário*/
+#cont{
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    margin-left: 25%;
+    margin-right: 25%;
+    border: solid red 7px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#area, #nome, #email{
+    width: 90%;
+}
+/*---------------------------*/
+/*caixas*/
+.geral{
+    font-family: tahoma;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: rgb(000,153,153);
+    font-weight: 800;
+}
+
+.caixas{
+    float: left;
+    width: 10%;
+    height: 50px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: solid 1px #ccc;
+    background-color: rgba(111,111,100,0.1);
+}
+
+/*---------------------------*/
+/*bordas*/
+.sb{
+    border: none 5px;
+}
+.bt{
+    border: dashed 5px;
+}
+.bp{
+    border: dotted 5px;
+}
+.bs{
+    border: solid 5px;
+}
+.bd{
+    border: double 5px;
+}
+.be{
+    border: groove 5px;
+}
+.br{
+    border: ridge 5px;
+}
+.bbr{
+    border: inset 5px; 
+}
+.bar{
+    border: outset 5px;
+}
+.difer{
+    border-bottom: dashed red 5px;
+    border-top: solid black 5px;
+    border-left: double green 5px;
+    border-right: groove yellow 5px;
+}
+/*---------------------------*/
+/*tabela 1*/
+.tab1{
+    width: 60%;
+    text-align: center;
+    border-collapse:separate;/*Collapse*/
+}
+.td1, .th1{
+    border: 1px solid rgba(011,110,110,0.5);
+
+
+}
+.th1{
+    background-color: black;
+    color: white;
+}
+/*tabela 2*/
+.tba2{
+    width: 60%;
+    font-family: "myriad arabic";
+    font-size: 1.4em;
+}
+.cap2{
+    font-weight: 900;
+    font-family: "myriad arabic";
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.cursos2{
+    text-align: center;
+}
+.cursos2 tr:nth-child(even){
+    background-color: gray;
+}
+.cursos2 tr:nth-child(odd){
+    background-color: rgba(0,128,28,0.9);
+}
+/*---------------------------*/
+/*Sistema  de herança configurar de forma diferente(tipo chamar um p dentro de uma div sem por id no p)*/
+#ali h3{
+    text-transform: uppercase;
+    text-align: center;
+    color: palevioletred;
+}
+#ali{
+    font-family: 'Segoe UI';
+    width: 35%;
+    padding: 1%;
+}
+#ali p{
+    font-size: 1em;
+    text-align: justify;
+    color: blue;
+}
+
+
+/*---------------------------*/
+/*caixas esquerda e direita*/
+#esq{
+    position: absolute;
+    left: 5%;
+    background-color: pink;
+    width: 20%;
+    height: 80px;
+    padding: 5px;
+    border: 1px dashed palevioletred;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;    
+}
+
+#dir{
+    position: absolute;
+    right: 5%;
+    background-color: pink;
+    width: 20%;
+    height: 80px;
+    padding: 5px;
+    border: 1px dashed palevioletred;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+#esq span, #dir span{
+    position:relative;
+    top: 40%;
+    color: palevioletred;
+}
+/*---------------------------*/
+/*cor por tamanho pag 90*/
+
+#legal{
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    #legal {
+      background-color: blue;
+      color: white;
+    }
+}
+@media screen and (max-width: 600px) {
+    #legal {
+      background-color: olive;
+    }
+}
+/*---------------------------*/
+/*sobreposição*/
+/*Z-I*/
+
+.cl1{
+    position: relative;
+    left: 20px;
+    background-color: gray;
+    width: 45px;
+    height: 50px;
+    border: black solid 1px;
+    z-index: 0;
+}
+
+.cl2{
+    position:  relative;
+    top: -20px;
+    left: 40px;
+    background-color: gray;
+    width: 45px;
+    height: 50px;
+    border: black solid 1px;
+    z-index: 1;
+}
+
+.cl3{
+    position: relative;
+    top: -40px;
+    left: 60px;
+    background-color: gray;
+    width: 45px;
+    height: 50px;
+    border: black solid 1px;
+    z-index: 2;
+}
+
+.cl4{
+    position: relative;
+    top: -60px;
+    left: 80px;
+    background-color: gray;
+    width: 45px;
+    height: 50px;
+    border: black solid 1px;
+    z-index: 3;
+}
+
+.image{
+    width: 250px;
+    height: 150px;
+    margin: 5px;
+    border: solid 3px black;
+    float: right;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /*Fomatação geral*/
+
+        .principal{
+            padding: 1%;
+            height: auto;
+            width: 25%;
+            float: left;
+            font-size: 1em;
+            line-height: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+        }
+
+        .principal h1{
+            color: blueviolet;
+            font-size: 1.5em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            border: 3px rgba(178,34,34,0.5) solid;
+        }
+        a{
+            color: cornflowerblue;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+
+        
+        @media (max-width:600px){
+            .principal{
+                padding: 1%;
+                height: auto;
+                width: auto;
+                font-size: 0.9m;
+                line-height: auto;
+                display: inline-block;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .principal h1{
+                font-size: 1.4em;
+                font-family: tahoma;
+            }
+            img{
+                width: 100%;
+                height: auto;
+                border: 3px rgba(178,34,34,0.5) solid;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <article class="principal">
+        <h1>Mini-tortas</h1>
+        <img src="torta-dueto-de-chocolate.jpg" alt="Minit-Tortas de diversos sabores com ótimos sabores" title="Mini-tortas de diversos sabores com ótimos preços">
+        <p class="tagline">Mais de 25 tipos de sabores</p> 
+        <p>Morango, maracujá, Pêssego, Limão, Maçã, Trufa de chocolate ao leite, Trufa de chocolate branco, Mousse de leite ninh e muitos outros</p>
+        <a href="#mini">+ Mini-Tortas</a>
+    </article>
+
+    <article class="principal">
+        <h1>Bolo de chocolate</h1>
+        <img src="torta-dueto-de-chocolate.jpg" alt="Minit-Tortas de diversos sabores com ótimos sabores" title="Mini-tortas de diversos sabores com ótimos preços">
+        <p>Conheça as variações de bolos de chocolate</p> 
+        <a href="#bolos">+ Bolos de chocolates</a>
+    </article>
+</body>
+</html>

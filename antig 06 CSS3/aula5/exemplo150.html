@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+            /*Formatação geral*/
+        body{
+            background-color: rgb(255, 228, 181);
+        }
+
+        .principal{
+            padding: 1%;
+            height: auto;
+            width: 45%;
+            float: left;
+            font-size: 1em;
+            line-height: auto;
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .principal h1{
+            color: #000;
+            font-size: 1.5em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        img{
+            width: 100%;
+        }
+
+            /*Fomatação para telas menores que 482px de largura*/
+
+        @media (max-width:600px){
+            body{
+                background-color: rgb(255, 228, 251);
+            }
+
+            .principal{
+                padding: 1%;
+                height: auto;
+                width: 50%;
+                font-size: 0.9;
+                line-height: auto;
+                display: inline-block;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .principal h1{
+                color: royalblue;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 1.4em;
+            }
+            img{
+                width: 100%;
+                height: auto;
+               
+            }
+            a{
+                color: blueviolet;
+                text-decoration: none;
+            }
+        }
+    
+
+    </style>
+</head>
+<body>
+    <article class="principal">
+        <h1>Mini tortas</h1>
+        <img src="Torta-Suiça-2.png" alt="Mini-tortas de diversos sabores com ótimos preços!" title="Mini-tortas de diversos sabores com ótimos preços!">
+        <p class="tagline"> mais de 25 tipos de sabores</p>
+        <p>Morango, maracujá, Pêssego, Limão, Maçã, Trufa de chocolate ao leite, Trufa de chocolate branco, Mousse de leite ninh e muitos outros</p>
+        <a href="#minitortas"> + Mini-Tortas</a>
+    </article>
+</body>
+</html>

@@ -1,0 +1,41 @@
+a:link, a:visited {
+    background-color: blue;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+h1{
+    text-align: center;
+    color: red;
+}
+p{
+    text-align: center;
+}
+
+#container{
+    text-align: center;
+}
+
+#first{
+    color: blue;
+}
+
+table, th, td{
+    border: 1px solid black;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .primeiro{
+            font-family: "Palatino", "Century Schoolbook L", "Times New Roman", Serif;
+            color:brown;
+            text-align: center;
+            font-size: 1.5em;
+            font-style: italic;
+        }
+
+        #segundo{
+            font-family: "Palatino", "Century Schoolbook L", "Times New Roman", Serif;
+            color:brown;
+            text-align: center;
+            font-size: 1.5em;
+            font-style: italic;
+        }
+
+        #conteudo{
+            width: 40%;
+            height: 25%;
+        }
+
+        h4{
+            font-family: "Century Schoolbook L","Times New Roman", "serif";
+            text-align:center;
+            font-size: 1.3em;
+            background:cadetblue;
+
+        }
+
+        p{
+            font-family: "Georgia";
+            text-align: justify;
+            font-size: 1.2em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Acesse links através do atalho Alt + "tecla definida"-->
+    <p><a href="https://www.youtube.com/?gl=BR" accesskey="T"> youtube</a></p>
+    <p><a href="https://www.facebook.com/" accesskey="U"> facebook</a></p>
+
+    <!-- Class serve para marcar um grupo para ser editado separadamente no CSS3-->
+
+    <p class="primeiro"> Titulo</p>
+
+    <!-- id serve para marcar um unico elemento para ser editadas separadamente no CSS3-->
+
+    <p id="segundo"> Titulo</p>
+
+    <!-- contenditable permite que o usuário edite o texto da tag-->
+
+    <p contenteditable= "false">Lorem ipsum dolor sit amet, consectetuer 
+        adipiscing elit. Maecenas porttitor congue 
+        massa. Fusce posuere, magna sed pulvinar 
+        ultricies, purus lectus malesuada libero, 
+        sit amet commodo magna eros quis urna. 
+        Nunc viverra imperdiet enim.</p>
+    <p contenteditable="true"> edite aqui Lorem ipsum dolor sit amet, consectetuer </p>
+
+    <!-- Dir permite espicificar a direção do texto, direita para esquerda ou esquerda para direita-->
+
+    <p dir="rtl">Direita para a esquerda</p>
+    <p dir="ltr">Esquerda para a direita</p>
+
+    <p dir="rtl" contenteditable="true" >Edite aqui</p>
+    <p dir="ltr" contenteditable="true" >Edite aqui</p>
+
+    <!-- Draggable define se o elemento é arrastável ou não-->
+    <!-- Sem java nada acontece, veja um exemplo, https://bestvpn.org/html5demos/drag/ 
+    Se a imagem não aparecer era pra ser uma lixeira-->
+
+    <div id="conteudo" draggable="true">
+        <h4>Novidades</h4>
+        <p>Lorem ipsum dolor sit amet,
+            consectetuer adipiscing elit.
+            Maecenas porttitor congue massa.
+            Fusce posuere, magna sed pulvinar ultricies, 
+            purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+            Nunc viverra imperdiet enim</p>
+    </div>
+
+    <!-- Hidden deixa o conteudo invisivel-->
+
+    <div hidden>Estou invisivel</div>
+    <div>estou aq</div>
+    <div>estou aq</div>
+
+    <!-- Lang diz ao navegador a lingua e pode ser adicionada em qualquer lugar-->
+
+    <div id="conteudo_em_pt" lang="pt_br">
+        <p>versão em pt</p>
+        ID é uma forma de diferenciar uma formatação
+        <p id="mais"><a href="#">Ver mais</a></p>
+    </div>
+
+    <div id="conteudo_em_en" lang="en">
+        <p>English version</p>
+        ID is a way to distinguish the formatting 
+        <p id="mais"><a href="#" title="MSG">View more</a></p>
+    </div>
+
+    <!-- Spellchek tributo usado em campo de textos de formulários, ele permite que o usuario
+    veja possiveis correções de seus proprios textos-->
+    <form>
+        <p title="MSG">Deixe sua mensagem</p>
+        <textarea title="MSG" spellcheck="true" name="mensagem" id="mensagem" rows="5" cols="50"></textarea>
+        <textarea spellcheck="false" name="mensagem" id="mensagem" rows="5" cols="50"></textarea>
+    </form>
+
+    <br>
+
+    <!-- CSS na linha -->
+
+    <p style="background-color: black; color: white; text-align: center; border: solid 3px red;"> CSS na linha</p>
+
+    <!-- Title em várias partes-->
+
+    <p title="título">Tem título na tag de texto</p>
+    <h1 title="título"> tem título na tag de título</h1>
+    <a href="https://www.youtube.com/" title="título"> Tem título em links</a>
+
+</body>
+</html>
